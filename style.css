@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  text-decoration: none;
+}
+
+body{
+  width: 100%;
+  max-width: 1100px;
+  font-family: 'Vollkorn', serif;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 
+  "... ...... ...... ...... ...... ...... ..." 
+  "... header header header header header ..." 1fr
+  "... ...... ...... ...... ...... ...... ..." 
+  "... secA   secA   secA   secA   secA   ..." 100vh
+  "... ...... ...... ...... ...... ...... ..." 
+  "... secB   secB   secB   secB   secB   ..." 1fr
+  "... ...... ...... ...... ...... ...... ..." 
+  "... secC   secC   secC   secC   secC   ..." 1fr
+  "... ...... ...... ...... ...... ...... ..." 
+  "... secD   secD   secD   secD   secD   ..." 1fr
+  "... ...... ...... ...... ...... ...... ..." 
+  "... secE   secE   secE   secE   secE   ..." 1fr
+  "... ...... ...... ...... ...... ...... ..." 
+  "... footer footer footer footer footer ..." 1fr
+  "... ...... ...... ...... ...... ...... ..." 
+  /auto 1fr auto 1fr auto 1fr auto
+  ;
+}
+header{
+  grid-area: header;
+}
+.secA{
+  grid-area: secA;
+}
+.subSec{
+  grid-area: subSec;
+}
+.secB{
+  grid-area: secB;
+}
+.secC{
+  grid-area: secC;
+}
+.secD{
+  grid-area: secD;
+}
+.secE{
+  grid-area: secE;
+}
+footer{
+  grid-area: footer;
+}
+
+/* ヘッダー */
+header{
+  font-size: 3rem;
+}
+
+/* 動画トップ */
+.secAtop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
